@@ -14,7 +14,7 @@ The following files are used in this project:
 2. `chicago.csv` - Bikeshare data for the city of Chicago
 3. `new_york_city.csv` - Bikeshare data for the city of New York
 4. `washington.csv`v - Bikeshare data for the city of Washington
-5. `vREADME.md` - This file, containing information about the project
+5. `README.md` - This file, containing information about the project
 
 ### How to run the script
 
