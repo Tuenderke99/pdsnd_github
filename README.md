@@ -16,6 +16,32 @@ The following files are used in this project:
 4. `washington.csv`v - Bikeshare data for the city of Washington
 5. `README.md` - This file, containing information about the project
 
+### Dependencies
+Before running the script, ensure that you have the following dependencies installed on your machine:
+
++ Python 3.x
++ Pandas
++ NumPy
++ Matplotlib
+
+You can install these dependencies using pip, the Python package manager. 
+For example, to install Pandas, type the following command in your terminal or command prompt window:
+
+`pip install pandas`
+
+If you're using Anaconda, check whether the packages are installed in your particular environment. You can install these dependencies using the following commands:
+
+`conda list pandas`
+
+`conda list numpy`
+
+`conda list matplotlib`
+
+If a package is not installed in your environment, you can use the `conda install`.
+
+Note that if you're using a virtual environment, you'll need to activate the environment before installing the dependencies.
+
+
 ### How to run the script
 
 To run the script, open a terminal or command prompt window and navigate to the directory containing the `bikeshare.py` script. Then type the following command:
