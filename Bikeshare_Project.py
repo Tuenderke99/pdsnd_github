@@ -124,7 +124,7 @@ def time_stats(df):
             break
         else:
             print('Invalid input. Please enter yes or no.')
-            pd.set_option(“display.max_columns”,200)
+            pd.set_option(display.max_columns,200)
             
     # Create bar chart of trip counts by month
     trip_counts = df['month'].value_counts()
