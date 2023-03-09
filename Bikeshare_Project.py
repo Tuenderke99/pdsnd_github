@@ -199,10 +199,10 @@ def user_stats(df):
     print('Number of user types:\n{}'.format(user_types))
 
     # Calculate and display the counts of genders, if 'Gender' column exists
-    try:
+    if 'Gender' in df.columns:
         gender_counts = df['Gender'].value_counts()
-        print('\nCounts of genders:\n{}'.format(gender_counts))
-    except KeyError:
+        print('Counts of genders:\n{}'.format(gender_counts))
+    else:
         print('No data available for the selected city')
 
     # Calculate and display earliest, most recent, and most common birth years, if 'Birth Year' column exists
