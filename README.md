@@ -51,9 +51,9 @@ python bikeshare.py
 ### Credits
 I consulted the following resources while working on this project:
 
-+[Python documentation](https://docs.python.org/3/) for information on using Python
-+[Pandas documentation](https://pandas.pydata.org/docs/) for information on using Pandas dataframes
-+[NumPy documentation](https://numpy.org/doc/) for information on using NumPy arrays and functions
-+[Matplotlib documentation](https://matplotlib.org/stable/users/index.html) for information on using the library for data visualization
-+[Stack Overflow](https://stackoverflow.com/) for answers to specific coding questions
-+[Udacity](https://www.udacity.com/) for providing the project specifications and bikeshare data.
++ [Python documentation](https://docs.python.org/3/) for information on using Python
++ [Pandas documentation](https://pandas.pydata.org/docs/) for information on using Pandas dataframes
++ [NumPy documentation](https://numpy.org/doc/) for information on using NumPy arrays and functions
++ [Matplotlib documentation](https://matplotlib.org/stable/users/index.html) for information on using the library for data visualization
++ [Stack Overflow](https://stackoverflow.com/) for answers to specific coding questions
++ [Udacity](https://www.udacity.com/) for providing the project specifications and bikeshare data.
