@@ -129,13 +129,13 @@ def time_stats(df):
     # Create bar chart of trip counts by month
     trip_counts = df['month'].value_counts()
     trip_counts = trip_counts.reindex(['January', 'February', 'March', 'April', 'May', 'June'])
-    
-    trip_counts.plot(kind='bar')
-    plt.title('Number of trips by month')
+    plt.bar(trip_counts.index, trip_counts.values)
+    plt.title('Number of Trips by Month')
     plt.xlabel('Month')
-    plt.ylabel('Number of trips')
-    plt.show()
-            
+    plt.ylabel('Number of Trips')
+    plt.savefig('month.png')
+    plt.close()    
+   
     # Print total execution time of function
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
