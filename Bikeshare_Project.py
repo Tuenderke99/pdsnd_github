@@ -164,27 +164,28 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
     
-    
 # Define trip_duration_stats function
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """
+    Displays statistics on the total and average trip duration.
+    """
 
-    print('\nCalculating Trip Duration...\n')
+    print('Calculating Trip Duration...')
     start_time = time.time()
 
     # Calculate total travel time
     total_travel_time = df['Trip Duration'].sum()
-    total_travel_time_hours = total_travel_time / 3600
-    print('Total travel time: {:.2f} hours'.format(total_travel_time_hours))
+    total_hours, total_minutes = divmod(total_travel_time, 3600)
+    print(f'Total travel time: {total_hours:02d}:{total_minutes:02d} hours')
 
     # Calculate mean travel time
     mean_travel_time = df['Trip Duration'].mean()
-    mean_travel_time_minutes = mean_travel_time / 60
-    print('Mean travel time: {:.2f} minutes'.format(mean_travel_time_minutes))
-    
+    mean_minutes, mean_seconds = divmod(mean_travel_time, 60)
+    print(f'Mean travel time: {mean_minutes:.2f} minutes')
+
     # Print how long the function took to run
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(f'This took {time.time() - start_time:.2f} seconds.')
+    print('-' * 40)
     
 
 # Define user_stats function
